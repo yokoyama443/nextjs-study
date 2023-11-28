@@ -3,6 +3,7 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import ReactMarkdown from 'react-markdown';
+import LikeButton from './LlikeButton';
 
 interface BlogProps {
   title: string;
@@ -16,6 +17,9 @@ const BlogPage: React.FC = async() => {
       <div className="max-w-5xl p-8 bg-gray-100 rounded-lg shadow-lg w-full">
         <div className='markdown'>
           <ReactMarkdown className="prose text-gray-700">{data.content}</ReactMarkdown>
+          <div className="text-center py-5">
+            <LikeButton />
+          </div>
         </div>
       </div>
     </div>
