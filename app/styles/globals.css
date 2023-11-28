@@ -1,0 +1,25 @@
+/* styles/globals.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.markdown ol {
+    @apply list-decimal pl-10;
+  }
+  .markdown ul {
+    @apply list-disc pl-10;
+  }
+  .markdown h4 {
+    @apply text-lg border-b border-black my-5;
+  }
+  
+  .markdown h1 {
+    @apply border-blue-500 px-2 my-4 border-l-4 text-4xl font-bold;
+  }
+
+  .markdown h2 {
+    @apply border-green-500 px-2 border-l-4 text-2xl;
+  }
+  .markdown ul {
+    @apply list-disc pl-10;
+  }
